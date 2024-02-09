@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_92b71c34cb34cff8871f523e721df0ff {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_92b71c34cb34cff8871f523e721df0ff" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_92b71c34cb34cff8871f523e721df0ff = L.map(
+                "map_92b71c34cb34cff8871f523e721df0ff",
+                {
+                    center: [51.5074, -0.1278],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b956a15043322aa2d281e9a4470d0515 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_92b71c34cb34cff8871f523e721df0ff);
+        
+    
+            var marker_8dfa44e112ff299ab8de399a18145b8c = L.marker(
+                [51.49497, -0.14435],
+                {}
+            ).addTo(map_92b71c34cb34cff8871f523e721df0ff);
+        
+    
+            var icon_4b2c02ff0650f4447c56b1f2b65396d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8dfa44e112ff299ab8de399a18145b8c.setIcon(icon_4b2c02ff0650f4447c56b1f2b65396d7);
+        
+    
+        var popup_32e183293f08375226d9f78f9edd655f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bda28be1e53c449be0a21e82053b927a = $(`<div id="html_bda28be1e53c449be0a21e82053b927a" style="width: 100.0%; height: 100.0%;">Victoria Station, Price: £2.53</div>`)[0];
+                popup_32e183293f08375226d9f78f9edd655f.setContent(html_bda28be1e53c449be0a21e82053b927a);
+            
+        
+
+        marker_8dfa44e112ff299ab8de399a18145b8c.bindPopup(popup_32e183293f08375226d9f78f9edd655f)
+        ;
+
+        
+    
+    
+            var marker_813755c67e8e020d1c10222896855f21 = L.marker(
+                [51.49307, -0.22551],
+                {}
+            ).addTo(map_92b71c34cb34cff8871f523e721df0ff);
+        
+    
+            var icon_56993953248ce5e9dec618f35b05177d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_813755c67e8e020d1c10222896855f21.setIcon(icon_56993953248ce5e9dec618f35b05177d);
+        
+    
+        var popup_80fe34c8cbf7f451e6f246e8b3053f08 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6c931fb7c655b8c71ac1b592fd47efdc = $(`<div id="html_6c931fb7c655b8c71ac1b592fd47efdc" style="width: 100.0%; height: 100.0%;">The William Morris, Price: £1.91</div>`)[0];
+                popup_80fe34c8cbf7f451e6f246e8b3053f08.setContent(html_6c931fb7c655b8c71ac1b592fd47efdc);
+            
+        
+
+        marker_813755c67e8e020d1c10222896855f21.bindPopup(popup_80fe34c8cbf7f451e6f246e8b3053f08)
+        ;
+
+        
+    
+    
+            var marker_226b1524f48b7e3d8fc08772b02734c7 = L.marker(
+                [51.49289, -0.23321],
+                {}
+            ).addTo(map_92b71c34cb34cff8871f523e721df0ff);
+        
+    
+            var icon_8c8bbd87de1e73c05a24d072aa60cb12 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_226b1524f48b7e3d8fc08772b02734c7.setIcon(icon_8c8bbd87de1e73c05a24d072aa60cb12);
+        
+    
+        var popup_02e8ba7775e39b38ae89f94790c26d32 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b291bc2e75364fa490ccf02bdc9489a4 = $(`<div id="html_b291bc2e75364fa490ccf02bdc9489a4" style="width: 100.0%; height: 100.0%;">The Plough & Harrow, Price: £1.82</div>`)[0];
+                popup_02e8ba7775e39b38ae89f94790c26d32.setContent(html_b291bc2e75364fa490ccf02bdc9489a4);
+            
+        
+
+        marker_226b1524f48b7e3d8fc08772b02734c7.bindPopup(popup_02e8ba7775e39b38ae89f94790c26d32)
+        ;
+
+        
+    
+    
+            var marker_214e15ba1975ec8852c84fe84f81026d = L.marker(
+                [51.50387, -0.21939],
+                {}
+            ).addTo(map_92b71c34cb34cff8871f523e721df0ff);
+        
+    
+            var icon_b4b792b232f234aff7f4821396b732bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_214e15ba1975ec8852c84fe84f81026d.setIcon(icon_b4b792b232f234aff7f4821396b732bf);
+        
+    
+        var popup_58c73b8ac2616ebe0652e2f85e7e7bb0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c5b461d6ed9c664dc5370365a4172f03 = $(`<div id="html_c5b461d6ed9c664dc5370365a4172f03" style="width: 100.0%; height: 100.0%;">The Central Bar, Price: £1.82</div>`)[0];
+                popup_58c73b8ac2616ebe0652e2f85e7e7bb0.setContent(html_c5b461d6ed9c664dc5370365a4172f03);
+            
+        
+
+        marker_214e15ba1975ec8852c84fe84f81026d.bindPopup(popup_58c73b8ac2616ebe0652e2f85e7e7bb0)
+        ;
+
+        
+    
+    
+            var marker_6be24297aea659002841a08b88cb4588 = L.marker(
+                [51.46537, -0.21317],
+                {}
+            ).addTo(map_92b71c34cb34cff8871f523e721df0ff);
+        
+    
+            var icon_d5d637c064624fd23e22b2bd5fe0debd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6be24297aea659002841a08b88cb4588.setIcon(icon_d5d637c064624fd23e22b2bd5fe0debd);
+        
+    
+        var popup_badcbfece5f6b6f72f433c9742bfc143 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c3cc7120ed7b990ca917df84b1903bb7 = $(`<div id="html_c3cc7120ed7b990ca917df84b1903bb7" style="width: 100.0%; height: 100.0%;">The Rocket, Price: £1.91</div>`)[0];
+                popup_badcbfece5f6b6f72f433c9742bfc143.setContent(html_c3cc7120ed7b990ca917df84b1903bb7);
+            
+        
+
+        marker_6be24297aea659002841a08b88cb4588.bindPopup(popup_badcbfece5f6b6f72f433c9742bfc143)
+        ;
+
+        
+    
+    
+            var marker_fe79f1f32d148f1ecfea8d39b4da3351 = L.marker(
+                [51.50825, -0.27696],
+                {}
+            ).addTo(map_92b71c34cb34cff8871f523e721df0ff);
+        
+    
+            var icon_6596fb38f85cb5b20f1c562978199bfe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fe79f1f32d148f1ecfea8d39b4da3351.setIcon(icon_6596fb38f85cb5b20f1c562978199bfe);
+        
+    
+        var popup_f14e3a82e62d03eeae4f9559d6488e60 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a693ed24c65ee79e2a7e0c51ab3ef359 = $(`<div id="html_a693ed24c65ee79e2a7e0c51ab3ef359" style="width: 100.0%; height: 100.0%;">The Red Lion and Pineapple, Price: £1.91</div>`)[0];
+                popup_f14e3a82e62d03eeae4f9559d6488e60.setContent(html_a693ed24c65ee79e2a7e0c51ab3ef359);
+            
+        
+
+        marker_fe79f1f32d148f1ecfea8d39b4da3351.bindPopup(popup_f14e3a82e62d03eeae4f9559d6488e60)
+        ;
+
+        
+    
+    
+            var marker_ea250852cbe4f2dd332c9be7a3ad5f46 = L.marker(
+                [51.46403, -0.16681],
+                {}
+            ).addTo(map_92b71c34cb34cff8871f523e721df0ff);
+        
+    
+            var icon_1bacbd88bd0edfc446fce5315653cdaf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ea250852cbe4f2dd332c9be7a3ad5f46.setIcon(icon_1bacbd88bd0edfc446fce5315653cdaf);
+        
+    
+        var popup_da478bd448f4ade799690c6c6ee2a0a2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b979d9948ee7469ebdc00d29cb3b3349 = $(`<div id="html_b979d9948ee7469ebdc00d29cb3b3349" style="width: 100.0%; height: 100.0%;">The London and South Western, Price: £1.91</div>`)[0];
+                popup_da478bd448f4ade799690c6c6ee2a0a2.setContent(html_b979d9948ee7469ebdc00d29cb3b3349);
+            
+        
+
+        marker_ea250852cbe4f2dd332c9be7a3ad5f46.bindPopup(popup_da478bd448f4ade799690c6c6ee2a0a2)
+        ;
+
+        
+    
+    
+            var marker_3d152c6e6cb5d8b941de12cedc463bbe = L.marker(
+                [51.4699, -0.17132],
+                {}
+            ).addTo(map_92b71c34cb34cff8871f523e721df0ff);
+        
+    
+            var icon_4202edd9e0e41897b8a912b9fc08ee34 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3d152c6e6cb5d8b941de12cedc463bbe.setIcon(icon_4202edd9e0e41897b8a912b9fc08ee34);
+        
+    
+        var popup_938724fb90e086ad5b92102786ef3025 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_374fe7e7d64de0b612f2ec21cd54ca1c = $(`<div id="html_374fe7e7d64de0b612f2ec21cd54ca1c" style="width: 100.0%; height: 100.0%;">The Asparagus, Price: £1.82</div>`)[0];
+                popup_938724fb90e086ad5b92102786ef3025.setContent(html_374fe7e7d64de0b612f2ec21cd54ca1c);
+            
+        
+
+        marker_3d152c6e6cb5d8b941de12cedc463bbe.bindPopup(popup_938724fb90e086ad5b92102786ef3025)
+        ;
+
+        
+    
+    
+            var marker_4ff1413d2b55b16692d75a96bfe219ea = L.marker(
+                [51.51069, -0.12929],
+                {}
+            ).addTo(map_92b71c34cb34cff8871f523e721df0ff);
+        
+    
+            var icon_b72fd14b6ee2170c7d66136532dec3db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4ff1413d2b55b16692d75a96bfe219ea.setIcon(icon_b72fd14b6ee2170c7d66136532dec3db);
+        
+    
+        var popup_917011e2a865c1d764447ba79c66b363 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_55fa8904566d9e0379727be692796a08 = $(`<div id="html_55fa8904566d9e0379727be692796a08" style="width: 100.0%; height: 100.0%;">The Montagu Pyke, Price: £2.48</div>`)[0];
+                popup_917011e2a865c1d764447ba79c66b363.setContent(html_55fa8904566d9e0379727be692796a08);
+            
+        
+
+        marker_4ff1413d2b55b16692d75a96bfe219ea.bindPopup(popup_917011e2a865c1d764447ba79c66b363)
+        ;
+
+        
+    
+    
+            var marker_d22bfe7ab38a22eff5fe9539b5056f49 = L.marker(
+                [51.517103, -0.11944],
+                {}
+            ).addTo(map_92b71c34cb34cff8871f523e721df0ff);
+        
+    
+            var icon_4c5c1548bce9f1f9f018c0b6a5ea0149 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d22bfe7ab38a22eff5fe9539b5056f49.setIcon(icon_4c5c1548bce9f1f9f018c0b6a5ea0149);
+        
+    
+        var popup_2c9c9c25cf737959026ba0ca3295cb54 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9fbe57ed0e460f4883b9baba8e039b61 = $(`<div id="html_9fbe57ed0e460f4883b9baba8e039b61" style="width: 100.0%; height: 100.0%;">The Shakespeare's Head, Price: £2.48</div>`)[0];
+                popup_2c9c9c25cf737959026ba0ca3295cb54.setContent(html_9fbe57ed0e460f4883b9baba8e039b61);
+            
+        
+
+        marker_d22bfe7ab38a22eff5fe9539b5056f49.bindPopup(popup_2c9c9c25cf737959026ba0ca3295cb54)
+        ;
+
+        
+    
+    
+            var marker_7be18e916b5f0efaf4d5ecd824d0fd12 = L.marker(
+                [51.5199, -0.10595],
+                {}
+            ).addTo(map_92b71c34cb34cff8871f523e721df0ff);
+        
+    
+            var icon_95f8957b3ae5f23162f69a3f894e970d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7be18e916b5f0efaf4d5ecd824d0fd12.setIcon(icon_95f8957b3ae5f23162f69a3f894e970d);
+        
+    
+        var popup_27e1fe11bb92968abe99696cd0f08142 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_90f43966180c9adc5ee3301cd4a2f5d5 = $(`<div id="html_90f43966180c9adc5ee3301cd4a2f5d5" style="width: 100.0%; height: 100.0%;">The Sir John Oldcastle, Price: £2.48</div>`)[0];
+                popup_27e1fe11bb92968abe99696cd0f08142.setContent(html_90f43966180c9adc5ee3301cd4a2f5d5);
+            
+        
+
+        marker_7be18e916b5f0efaf4d5ecd824d0fd12.bindPopup(popup_27e1fe11bb92968abe99696cd0f08142)
+        ;
+
+        
+    
+    
+            var marker_575ba5ec9852a0182a515357e778ea64 = L.marker(
+                [51.49693, -0.09908],
+                {}
+            ).addTo(map_92b71c34cb34cff8871f523e721df0ff);
+        
+    
+            var icon_7d3cbcf415a3f0638ccf07325cdaf931 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_575ba5ec9852a0182a515357e778ea64.setIcon(icon_7d3cbcf415a3f0638ccf07325cdaf931);
+        
+    
+        var popup_ff2447857a82753ba5c3d761db4ef5cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_37491f0444a75c9f45d19fc7ac98cd0b = $(`<div id="html_37491f0444a75c9f45d19fc7ac98cd0b" style="width: 100.0%; height: 100.0%;">The Rockingham Arms, Price: £2.11</div>`)[0];
+                popup_ff2447857a82753ba5c3d761db4ef5cd.setContent(html_37491f0444a75c9f45d19fc7ac98cd0b);
+            
+        
+
+        marker_575ba5ec9852a0182a515357e778ea64.bindPopup(popup_ff2447857a82753ba5c3d761db4ef5cd)
+        ;
+
+        
+    
+    
+            var marker_635f03649a85ed67f419f63bfe047e52 = L.marker(
+                [51.51323, -0.29796],
+                {}
+            ).addTo(map_92b71c34cb34cff8871f523e721df0ff);
+        
+    
+            var icon_8f9908ae95a397cb4d49ed0267f00fe9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_635f03649a85ed67f419f63bfe047e52.setIcon(icon_8f9908ae95a397cb4d49ed0267f00fe9);
+        
+    
+        var popup_04a792b5c908f7a8141e67adf7ca9003 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f082b2bef54be3101b65a7b03b7b4d1 = $(`<div id="html_8f082b2bef54be3101b65a7b03b7b4d1" style="width: 100.0%; height: 100.0%;">The Sir Michael Balcon, Price: £1.91</div>`)[0];
+                popup_04a792b5c908f7a8141e67adf7ca9003.setContent(html_8f082b2bef54be3101b65a7b03b7b4d1);
+            
+        
+
+        marker_635f03649a85ed67f419f63bfe047e52.bindPopup(popup_04a792b5c908f7a8141e67adf7ca9003)
+        ;
+
+        
+    
+    
+            var marker_ec649497ed1935171dec79d681bc3093 = L.marker(
+                [51.55343, -0.29224],
+                {}
+            ).addTo(map_92b71c34cb34cff8871f523e721df0ff);
+        
+    
+            var icon_1ee165c50b07fc86fd369551b367ab93 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ec649497ed1935171dec79d681bc3093.setIcon(icon_1ee165c50b07fc86fd369551b367ab93);
+        
+    
+        var popup_b18883eca3bb40408be44f16fbc5fa57 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_86cd3027ebd3e25d4a6eade8288d85d6 = $(`<div id="html_86cd3027ebd3e25d4a6eade8288d85d6" style="width: 100.0%; height: 100.0%;">J.J. Moons, Price: £1.82</div>`)[0];
+                popup_b18883eca3bb40408be44f16fbc5fa57.setContent(html_86cd3027ebd3e25d4a6eade8288d85d6);
+            
+        
+
+        marker_ec649497ed1935171dec79d681bc3093.bindPopup(popup_b18883eca3bb40408be44f16fbc5fa57)
+        ;
+
+        
+    
+    
+            var marker_1b5449c5439e24e5886fd5f3daf0a152 = L.marker(
+                [51.55358, -0.21144],
+                {}
+            ).addTo(map_92b71c34cb34cff8871f523e721df0ff);
+        
+    
+            var icon_da26e416b615b4fd190a3055c29b8377 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1b5449c5439e24e5886fd5f3daf0a152.setIcon(icon_da26e416b615b4fd190a3055c29b8377);
+        
+    
+        var popup_4c57bb8a89657084f545cd4d8521e527 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b55b9945e2c8faaa769195e9d4ca60b5 = $(`<div id="html_b55b9945e2c8faaa769195e9d4ca60b5" style="width: 100.0%; height: 100.0%;">The Beaten Docket, Price: £2.05</div>`)[0];
+                popup_4c57bb8a89657084f545cd4d8521e527.setContent(html_b55b9945e2c8faaa769195e9d4ca60b5);
+            
+        
+
+        marker_1b5449c5439e24e5886fd5f3daf0a152.bindPopup(popup_4c57bb8a89657084f545cd4d8521e527)
+        ;
+
+        
+    
+    
+            var marker_a444e96e481567d22c0be730d518f54c = L.marker(
+                [51.41795, -0.37005],
+                {}
+            ).addTo(map_92b71c34cb34cff8871f523e721df0ff);
+        
+    
+            var icon_fc5211e2e08679a16117437ac0316d92 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a444e96e481567d22c0be730d518f54c.setIcon(icon_fc5211e2e08679a16117437ac0316d92);
+        
+    
+        var popup_f00161a3285522d016cdcf0051902bb5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_229b21132610e1f2a8798d60dea30538 = $(`<div id="html_229b21132610e1f2a8798d60dea30538" style="width: 100.0%; height: 100.0%;">The Moon on the Square, Price: £1.82</div>`)[0];
+                popup_f00161a3285522d016cdcf0051902bb5.setContent(html_229b21132610e1f2a8798d60dea30538);
+            
+        
+
+        marker_a444e96e481567d22c0be730d518f54c.bindPopup(popup_f00161a3285522d016cdcf0051902bb5)
+        ;
+
+        
+    
+    
+            var marker_37063f57f12102ed65d1f1660830c3aa = L.marker(
+                [51.44059, 0.76125],
+                {}
+            ).addTo(map_92b71c34cb34cff8871f523e721df0ff);
+        
+    
+            var icon_75a29e6ca6f7c29de39318f54ac345bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_37063f57f12102ed65d1f1660830c3aa.setIcon(icon_75a29e6ca6f7c29de39318f54ac345bb);
+        
+    
+        var popup_5ec8a65e8e6336e6de820b718d6ff74d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5c89d5c4661ef97046f8fb2f5b67bd2b = $(`<div id="html_5c89d5c4661ef97046f8fb2f5b67bd2b" style="width: 100.0%; height: 100.0%;">The Belle and Lion, Price: £1.82</div>`)[0];
+                popup_5ec8a65e8e6336e6de820b718d6ff74d.setContent(html_5c89d5c4661ef97046f8fb2f5b67bd2b);
+            
+        
+
+        marker_37063f57f12102ed65d1f1660830c3aa.bindPopup(popup_5ec8a65e8e6336e6de820b718d6ff74d)
+        ;
+
+        
+    
+    
+            var marker_f200f2cd4839cb4433492c4220dd6194 = L.marker(
+                [51.27254, 0.19249],
+                {}
+            ).addTo(map_92b71c34cb34cff8871f523e721df0ff);
+        
+    
+            var icon_c41d91aaf77908ace5449241e07ab932 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f200f2cd4839cb4433492c4220dd6194.setIcon(icon_c41d91aaf77908ace5449241e07ab932);
+        
+    
+        var popup_a7ab67c3ac2a0c1d3e902ffa4cc49fbf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_56cf7748fc0da8a2c22828bcc8bafd50 = $(`<div id="html_56cf7748fc0da8a2c22828bcc8bafd50" style="width: 100.0%; height: 100.0%;">The Sennockian, Price: £1.82</div>`)[0];
+                popup_a7ab67c3ac2a0c1d3e902ffa4cc49fbf.setContent(html_56cf7748fc0da8a2c22828bcc8bafd50);
+            
+        
+
+        marker_f200f2cd4839cb4433492c4220dd6194.bindPopup(popup_a7ab67c3ac2a0c1d3e902ffa4cc49fbf)
+        ;
+
+        
+    
+    
+            var marker_84c6f1555f5fc4bece49db36c1902955 = L.marker(
+                [51.52319, -0.71763],
+                {}
+            ).addTo(map_92b71c34cb34cff8871f523e721df0ff);
+        
+    
+            var icon_1f8a32b881c0e11eafd8f30b99a7c310 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_84c6f1555f5fc4bece49db36c1902955.setIcon(icon_1f8a32b881c0e11eafd8f30b99a7c310);
+        
+    
+        var popup_20795f8825998b94ea702d3e332beb47 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cebd3620916de348b467bdef39923909 = $(`<div id="html_cebd3620916de348b467bdef39923909" style="width: 100.0%; height: 100.0%;">The Bear, Price: £1.82</div>`)[0];
+                popup_20795f8825998b94ea702d3e332beb47.setContent(html_cebd3620916de348b467bdef39923909);
+            
+        
+
+        marker_84c6f1555f5fc4bece49db36c1902955.bindPopup(popup_20795f8825998b94ea702d3e332beb47)
+        ;
+
+        
+    
+    
+            var marker_836b6f02e6c5b5b6ed1cb7051ab7f6ca = L.marker(
+                [51.45646, -0.97439],
+                {}
+            ).addTo(map_92b71c34cb34cff8871f523e721df0ff);
+        
+    
+            var icon_5cc5bad3abda658b19a6f24ce389f928 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_836b6f02e6c5b5b6ed1cb7051ab7f6ca.setIcon(icon_5cc5bad3abda658b19a6f24ce389f928);
+        
+    
+        var popup_119a71961bb808546f1d7c66acecea81 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e9ea8395503cfe5c9b4b3624ab22b26d = $(`<div id="html_e9ea8395503cfe5c9b4b3624ab22b26d" style="width: 100.0%; height: 100.0%;">The Hope Tap, Price: £1.82</div>`)[0];
+                popup_119a71961bb808546f1d7c66acecea81.setContent(html_e9ea8395503cfe5c9b4b3624ab22b26d);
+            
+        
+
+        marker_836b6f02e6c5b5b6ed1cb7051ab7f6ca.bindPopup(popup_119a71961bb808546f1d7c66acecea81)
+        ;
+
+        
+    
+    
+            var marker_984be8ca2a7cc449a7f30214b3c5fff1 = L.marker(
+                [51.7706, -3.24411],
+                {}
+            ).addTo(map_92b71c34cb34cff8871f523e721df0ff);
+        
+    
+            var icon_b42ffa4e866e8a0e1f7d30d12f5ff416 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_984be8ca2a7cc449a7f30214b3c5fff1.setIcon(icon_b42ffa4e866e8a0e1f7d30d12f5ff416);
+        
+    
+        var popup_1b618446ebc00e0225cddf4e7c3bc3ad = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fa9417302a6650fbba6f345d76b4a910 = $(`<div id="html_fa9417302a6650fbba6f345d76b4a910" style="width: 100.0%; height: 100.0%;">The Olympia, Price: £1.82</div>`)[0];
+                popup_1b618446ebc00e0225cddf4e7c3bc3ad.setContent(html_fa9417302a6650fbba6f345d76b4a910);
+            
+        
+
+        marker_984be8ca2a7cc449a7f30214b3c5fff1.bindPopup(popup_1b618446ebc00e0225cddf4e7c3bc3ad)
+        ;
+
+        
+    
+</script>
+</html>
